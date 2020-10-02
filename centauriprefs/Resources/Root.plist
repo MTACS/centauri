@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>cellClass</key>
+			<string>CentauriSwitch</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.mtac.centauri</string>
+			<key>key</key>
+			<string>enabled</string>
+			<key>label</key>
+			<string>Enable Tweak</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Low Power Mode</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>cellClass</key>
+			<string>CentauriSwitch</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.mtac.centauri</string>
+			<key>key</key>
+			<string>enableLowPowerTap</string>
+			<key>label</key>
+			<string>Enable Low Power Tap</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>cellClass</key>
+			<string>CentauriSwitch</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.mtac.centauri</string>
+			<key>key</key>
+			<string>enableHaptics</string>
+			<key>label</key>
+			<string>Enable Haptic Feedback</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>cellClass</key>
+			<string>CentauriSwitch</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.mtac.centauri</string>
+			<key>key</key>
+			<string>hideEmptyBatteryRings</string>
+			<key>label</key>
+			<string>Disable Empty Rings</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>cellClass</key>
+			<string>CentauriTableCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.mtac.centauri</string>
+			<key>action</key>
+			<string>respring</string>
+			<key>label</key>
+			<string>Apply Changes</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>cellClass</key>
+			<string>CentauriTableCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.mtac.centauri</string>
+			<key>action</key>
+			<string>sourceCode</string>
+			<key>label</key>
+			<string>View Source</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>cellClass</key>
+			<string>CentauriTableCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.mtac.centauri</string>
+			<key>action</key>
+			<string>twitter</string>
+			<key>label</key>
+			<string>Follow on Twitter</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerAlignment</key>
+			<string>1</string>
+			<key>footerText</key>
+			<string>v1.0-α © MTAC</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Centauri</string>
+</dict>
+</plist>

@@ -1,0 +1,9 @@
+Package: com.mtac.centauri
+Name: Centauri
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Apple gave us Widgets, make your Battery one useful
+Maintainer: MTAC
+Author: MTAC
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader (>= 2.2.3), firmware (>= 14.0)
