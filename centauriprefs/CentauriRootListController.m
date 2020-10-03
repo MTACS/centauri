@@ -10,6 +10,20 @@
 	}
 	return _specifiers;
 }
+- (void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
+	if ([self.view respondsToSelector:@selector(setTintColor:)]) {
+		UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
+		keyWindow.tintColor = tint;
+	}
+}
+- (void)viewWillDisappear:(BOOL)animated {
+	[super viewWillDisappear:animated];
+	if ([self.view respondsToSelector:@selector(setTintColor:)]) {
+		UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
+		keyWindow.tintColor = [UIColor systemBlueColor];
+	}
+}
 - (void)respring {
 	AudioServicesPlaySystemSound(1519);
 	pid_t pid;
