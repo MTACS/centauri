@@ -5,6 +5,9 @@
 @interface CentauriRootListController : PSListController
 @end
 
+@interface CTLController : PSListController
+@end
+
 @interface PSControlTableCell : PSTableCell
 - (UIControl *)control;
 @end
@@ -17,4 +20,9 @@
 @end
 
 @interface CentauriTableCell : PSTableCell
+@end
+
+@interface UILabel (Centauri)
+- (void)setMarqueeEnabled:(BOOL)arg1;
+- (void)setMarqueeRunning:(BOOL)arg1;
 @end

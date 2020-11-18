@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>cellClass</key>
+			<string>CentauriTableCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.mtac.centauri</string>
+			<key>action</key>
+			<string>greek</string>
+			<key>label</key>
+			<string>Greek - @Greek_Ios_Hack</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>cellClass</key>
+			<string>CentauriTableCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.mtac.centauri</string>
+			<key>action</key>
+			<string>italian</string>
+			<key>label</key>
+			<string>Italian - @CydiaGeek</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerAlignment</key>
+			<string>1</string>
+			<key>footerText</key>
+			<string>v1.0.1-α © MTAC</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>TRANSLATIONS</string>
+</dict>
+</plist>

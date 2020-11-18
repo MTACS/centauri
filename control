@@ -1,6 +1,6 @@
 Package: com.mtac.centauri
 Name: Centauri
-Version: 1.0
+Version: 1.0.1
 Architecture: iphoneos-arm
 Description: Apple gave us Widgets, make your Battery one useful
 Maintainer: MTAC

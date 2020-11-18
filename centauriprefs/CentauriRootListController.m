@@ -38,11 +38,42 @@
 }
 @end
 
+@implementation CTLController
+- (NSArray *)specifiers {
+	if (!_specifiers) {
+		_specifiers = [self loadSpecifiersFromPlistName:@"Translations" target:self];
+	}
+	return _specifiers;
+}
+- (void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
+	if ([self.view respondsToSelector:@selector(setTintColor:)]) {
+		UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
+		keyWindow.tintColor = tint;
+	}
+}
+- (void)viewWillDisappear:(BOOL)animated {
+	[super viewWillDisappear:animated];
+	if ([self.view respondsToSelector:@selector(setTintColor:)]) {
+		UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
+		keyWindow.tintColor = [UIColor systemBlueColor];
+	}
+}
+- (void)greek {
+	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://twitter.com/Greek_Ios_Hack"]];
+}
+- (void)italian {
+	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://twitter.com/CydiaGeek"]];
+}
+@end
+
 @implementation CentauriSwitch
 - (id)initWithStyle:(int)style reuseIdentifier:(id)identifier specifier:(id)specifier {
 	self = [super initWithStyle:style reuseIdentifier:identifier specifier:specifier];
 	if (self) {
 		[((UISwitch *)[self control]) setOnTintColor:tint];
+		[(UILabel *)[self textLabel] setMarqueeEnabled:YES];
+		[(UILabel *)[self textLabel] setMarqueeRunning:YES];
 	}
 	return self;
 }

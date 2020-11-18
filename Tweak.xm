@@ -23,6 +23,7 @@ static BOOL enabled;
 static BOOL enableLowPowerTap;
 static BOOL enableHaptics;
 static BOOL hideEmptyBatteryRings;
+static BOOL hideBackground;
 
 %group Tweak 
 %hook BCUIRingItemView
@@ -56,6 +57,12 @@ static BOOL hideEmptyBatteryRings;
 	}
 }
 %end
+
+%hook SBHWidgetStackViewController
+- (BOOL)_shouldDrawSystemBackgroundMaterialForWidget:(id)arg1 {
+	return !hideBackground;
+}
+%end
 %end
 
 static void notificationCallback(CFNotificationCenterRef center, void *observer, CFStringRef name, const void *object, CFDictionaryRef userInfo) {
@@ -67,6 +74,9 @@ static void notificationCallback(CFNotificationCenterRef center, void *observer,
 	hideEmptyBatteryRings = (hideEmptyBatteryRingsValue) ? [hideEmptyBatteryRingsValue boolValue] : NO;
 	NSNumber *enableHapticsValue = (NSNumber *)[[NSUserDefaults standardUserDefaults] objectForKey:@"enableHaptics" inDomain:domain];
 	enableHaptics = (enableHapticsValue) ? [enableHapticsValue boolValue] : NO;
+	NSNumber *hideBackgroundValue = (NSNumber *)[[NSUserDefaults standardUserDefaults] objectForKey:@"hideBackground" inDomain:domain];
+	hideBackground = (hideBackgroundValue) ? [hideBackgroundValue boolValue] : NO;
+	
 }
 
 %ctor {

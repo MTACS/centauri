@@ -22,13 +22,13 @@
 			<key>key</key>
 			<string>enabled</string>
 			<key>label</key>
-			<string>Enable Tweak</string>
+			<string>ENABLE_TWEAK</string>
 		</dict>
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>label</key>
-			<string>Low Power Mode</string>
+			<string></string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -42,7 +42,7 @@
 			<key>key</key>
 			<string>enableLowPowerTap</string>
 			<key>label</key>
-			<string>Enable Low Power Tap</string>
+			<string>LOW_POWER_TAP</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -56,7 +56,7 @@
 			<key>key</key>
 			<string>enableHaptics</string>
 			<key>label</key>
-			<string>Enable Haptic Feedback</string>
+			<string>HAPTIC_FEEDBACK</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -70,7 +70,21 @@
 			<key>key</key>
 			<string>hideEmptyBatteryRings</string>
 			<key>label</key>
-			<string>Disable Empty Rings</string>
+			<string>EMPTY_RINGS</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>cellClass</key>
+			<string>CentauriSwitch</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.mtac.centauri</string>
+			<key>key</key>
+			<string>hideBackground</string>
+			<key>label</key>
+			<string>HIDE_BACKGROUND</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -90,7 +104,7 @@
 			<key>action</key>
 			<string>respring</string>
 			<key>label</key>
-			<string>Apply Changes</string>
+			<string>APPLY_CHANGES</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -104,7 +118,21 @@
 			<key>action</key>
 			<string>sourceCode</string>
 			<key>label</key>
-			<string>View Source</string>
+			<string>VIEW_SOURCE</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>cellClass</key>
+			<string>CentauriTableCell</string>
+			<key>default</key>
+			<string></string>
+			<key>detail</key>
+			<string>CTLController</string>
+			<key>defaults</key>
+			<string>com.mtac.centauri</string>
+			<key>label</key>
+			<string>TRANSLATIONS</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -118,7 +146,7 @@
 			<key>action</key>
 			<string>twitter</string>
 			<key>label</key>
-			<string>Follow on Twitter</string>
+			<string>FOLLOW_TWITTER</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -126,10 +154,10 @@
 			<key>footerAlignment</key>
 			<string>1</string>
 			<key>footerText</key>
-			<string>v1.0-α © MTAC</string>
+			<string>v1.0.1-α © MTAC</string>
 		</dict>
 	</array>
 	<key>title</key>
-	<string>Centauri</string>
+	<string>CENTAURI</string>
 </dict>
 </plist>
